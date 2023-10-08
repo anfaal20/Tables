@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inner Page</title>
+    <style>
+        /* CSS for the split-screen layout */
+        .split-container {
+            display: flex;
+            align-items: center;
+        }
+        .split-image {
+            flex: 1;
+        }
+        .split-text {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Page Heading</h1>
+    <div class="split-container">
+        <div class="split-image">
+            <!-- Add your image here -->
+            <img src="" alt="Image">
+        </div>
+        <div class="split-text">
+            <!-- Add your text content here -->
+            <p>This is the text content for the split-screen section.</p>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+/* CSS for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    /* Add responsive styles here */
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .split-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+}
+</style>
